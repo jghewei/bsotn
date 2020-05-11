@@ -139,7 +139,7 @@
 /* #undef HAVE_DMALLOC_H */
 
 /* Set if the dpkg-query command is available */
-#define HAVE_DPKG_QUERY 1
+/* #undef HAVE_DPKG_QUERY */
 
 /* Define to 1 if you have the <err.h> header file. */
 #define HAVE_ERR_H 1
@@ -418,7 +418,7 @@
 #define HAVE_LONG_LONG_INT 1
 
 /* Set if the lpstat command is available */
-#define HAVE_LPSTAT 1
+/* #undef HAVE_LPSTAT */
 
 /* Define to 1 if you have the `lrand48' function. */
 #define HAVE_LRAND48 1
@@ -1306,7 +1306,7 @@
 #define KERNEL_LOC "unknown"
 
 /* Path to the lpstat command */
-#define LPSTAT_PATH "/usr/bin/lpstat"
+/* #undef LPSTAT_PATH */
 
 /* Define to the sub-directory in which libtool stores uninstalled libraries.
    */
@@ -1328,11 +1328,11 @@
 /* #undef NETSNMP_CAN_USE_SYSCTL */
 
 /* configure options specified */
-#define NETSNMP_CONFIGURE_OPTIONS " '--with-out-mib-modules=mibII' '--disable-ucd-snmp-compatibility' '--disable-agent' '--disable-applications' '--disable-manuals' '--disable-scripts' '--disable-mibs' '--disable-mib-loading' '--disable-ipv6' '--with-default-snmp-version=2' '--with-sys-contact=' '--with-sys-location=' '--disable-embedded-perl' '--without-perl-modules' '--target=powerpc-linux' '--host=powerpc-linux' '--with-persistent-directory=/tmp/snmp' '--with-logfile=/tmp/snmp/snmpd.log' '--disable-static' '--enable-shared' '--prefix=/home/myshare/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc' '--with-cc=powerpc-e300c3-linux-gnu-gcc' '--with-ar=powerpc-e300c3-linux-gnu-ar' 'host_alias=powerpc-linux' 'target_alias=powerpc-linux'"
+#define NETSNMP_CONFIGURE_OPTIONS " '--with-out-mib-modules=mibII' '--disable-ucd-snmp-compatibility' '--disable-agent' '--disable-applications' '--disable-manuals' '--disable-scripts' '--disable-mibs' '--disable-mib-loading' '--disable-ipv6' '--with-default-snmp-version=2' '--with-sys-contact=' '--with-sys-location=' '--disable-embedded-perl' '--without-perl-modules' '--target=powerpc-linux' '--host=powerpc-linux' '--with-persistent-directory=/tmp/snmp' '--with-logfile=/tmp/snmp/snmpd.log' '--disable-static' '--enable-shared' '--prefix=/root/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc' '--with-cc=powerpc-e300c3-linux-gnu-gcc' '--with-ar=powerpc-e300c3-linux-gnu-ar' 'host_alias=powerpc-linux' 'target_alias=powerpc-linux'"
 
 /* default location to look for mibs to load using the above tokens and/or
    those in the MIBS envrionment variable */
-#define NETSNMP_DEFAULT_MIBDIRS "$HOME/.snmp/mibs:/home/myshare/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/share/snmp/mibs"
+#define NETSNMP_DEFAULT_MIBDIRS "$HOME/.snmp/mibs:/root/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/share/snmp/mibs"
 
 /* default mib files to load, specified by path. */
 /* #undef NETSNMP_DEFAULT_MIBFILES */
@@ -1488,7 +1488,7 @@
 
 /* Command to generate ps output, the final column must be the process name
    withOUT arguments */
-#define PSCMD "/bin/ps -e"
+#define PSCMD "/usr/bin/ps -e"
 
 /* Define as the return type of signal handlers (`int' or `void'). */
 #define RETSIGTYPE void
@@ -1543,7 +1543,7 @@
 #define TIME_WITH_SYS_TIME 1
 
 /* Where is the uname command */
-#define UNAMEPROG "/bin/uname"
+#define UNAMEPROG "/usr/bin/uname"
 
 /* Enable extensions on AIX 3, Interix.  */
 #ifndef _ALL_SOURCE
@@ -1772,10 +1772,10 @@
 /* #undef NETSNMP_DEFAULT_CLIENT_RECV_BUF */
 
 /* net-snmp's major path names */
-#define SNMPLIBPATH "/home/myshare/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/lib/snmp"
-#define SNMPSHAREPATH "/home/myshare/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/share/snmp"
-#define SNMPCONFPATH "/home/myshare/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/etc/snmp"
-#define SNMPDLMODPATH "/home/myshare/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/lib/snmp/dlmod"
+#define SNMPLIBPATH "/root/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/lib/snmp"
+#define SNMPSHAREPATH "/root/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/share/snmp"
+#define SNMPCONFPATH "/root/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/etc/snmp"
+#define SNMPDLMODPATH "/root/net-snmp-5.7.3/net-snmp-5.7.3/../build_ppc/lib/snmp/dlmod"
 
 /* NETSNMP_LOGFILE:  If defined it closes stdout/err/in and opens this in 
    out/err's place.  (stdin is closed so that sh scripts won't wait for it) */

@@ -41,7 +41,7 @@ count()
     echo $#
 }
 
-prefix=/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64
+prefix=/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64
 exec_prefix=${prefix}
 includedir=${prefix}/include
 libdir=${exec_prefix}/lib
@@ -110,7 +110,7 @@ else
       echo "indent -orig -nbc -bap -nut -nfca `(cd $NSC_INCDIR/net-snmp; perl -n -e 'print "-T $1 " if (/}\s*(netsnmp_\w+)\s*;/);' */*.h)`"
       ;;
     --configure-options|--con*)
-      echo " '--with-out-mib-modules=mibII' '--disable-ucd-snmp-compatibility' '--disable-agent' '--disable-applications' '--disable-manuals' '--disable-scripts' '--disable-mibs' '--disable-mib-loading' '--disable-ipv6' '--with-default-snmp-version=2' '--with-sys-contact=' '--with-sys-location=' '--disable-embedded-perl' '--without-perl-modules' '--target=powerpc-linux' '--host=powerpc-linux' '--with-persistent-directory=/tmp/snmp' '--with-logfile=/tmp/snmp/snmpd.log' '--disable-static' '--enable-shared' '--prefix=/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64' 'host_alias=powerpc-linux' 'target_alias=powerpc-linux'"
+      echo " '--with-out-mib-modules=mibII' '--disable-ucd-snmp-compatibility' '--disable-agent' '--disable-applications' '--disable-manuals' '--disable-scripts' '--disable-mibs' '--disable-mib-loading' '--disable-ipv6' '--with-default-snmp-version=2' '--with-sys-contact=' '--with-sys-location=' '--disable-embedded-perl' '--without-perl-modules' '--target=powerpc-linux' '--host=powerpc-linux' '--with-persistent-directory=/tmp/snmp' '--with-logfile=/tmp/snmp/snmpd.log' '--disable-static' '--enable-shared' '--prefix=/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64' 'host_alias=powerpc-linux' 'target_alias=powerpc-linux'"
       ;;
     --snmpd-module-list|--mod*)
 echo  mibII/vacm_conf mibII/vacm_vars utilities/execute util_funcs/header_generic mibII/vacm_context
@@ -119,7 +119,7 @@ echo  mibII/vacm_conf mibII/vacm_vars utilities/execute util_funcs/header_generi
       echo SNMPv2-MIB:IF-MIB:IP-MIB:TCP-MIB:UDP-MIB:SNMP-VIEW-BASED-ACM-MIB:SNMP-COMMUNITY-MIB
       ;;
     --default-mibdirs|--mibdirs|--MIBDIRS)
-      echo $HOME/.snmp/mibs:/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp/mibs
+      echo $HOME/.snmp/mibs:/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp/mibs
       ;;
     --env-separator)
       echo ":"
@@ -128,7 +128,7 @@ echo  mibII/vacm_conf mibII/vacm_vars utilities/execute util_funcs/header_generi
       echo ""
       ;;
     --snmpconfpath|--SNMPCONFPATH)
-      echo "/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/etc/snmp:/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp:/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/lib/snmp:$HOME/.snmp:/tmp/snmp"
+      echo "/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/etc/snmp:/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp:/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/lib/snmp:$HOME/.snmp:/tmp/snmp"
       ;;
     --persistent-directory|--persistent-dir)
       echo /tmp/snmp

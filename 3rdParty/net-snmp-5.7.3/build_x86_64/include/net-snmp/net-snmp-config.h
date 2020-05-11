@@ -418,7 +418,7 @@
 #define HAVE_LONG_LONG_INT 1
 
 /* Set if the lpstat command is available */
-/* #undef HAVE_LPSTAT */
+#define HAVE_LPSTAT 1
 
 /* Define to 1 if you have the `lrand48' function. */
 #define HAVE_LRAND48 1
@@ -643,7 +643,7 @@
 #define HAVE_PREAD64 1
 
 /* Set if /etc/printcap exists */
-/* #undef HAVE_PRINTCAP */
+#define HAVE_PRINTCAP 1
 
 /* Define to 1 if you have the <pthread.h> header file. */
 #define HAVE_PTHREAD_H 1
@@ -1306,7 +1306,7 @@
 #define KERNEL_LOC "unknown"
 
 /* Path to the lpstat command */
-/* #undef LPSTAT_PATH */
+#define LPSTAT_PATH "/usr/bin/lpstat"
 
 /* Define to the sub-directory in which libtool stores uninstalled libraries.
    */
@@ -1328,11 +1328,11 @@
 /* #undef NETSNMP_CAN_USE_SYSCTL */
 
 /* configure options specified */
-#define NETSNMP_CONFIGURE_OPTIONS " '--with-out-mib-modules=mibII' '--disable-ucd-snmp-compatibility' '--disable-agent' '--disable-applications' '--disable-manuals' '--disable-scripts' '--disable-mibs' '--disable-mib-loading' '--disable-ipv6' '--with-default-snmp-version=2' '--with-sys-contact=' '--with-sys-location=' '--disable-embedded-perl' '--without-perl-modules' '--target=powerpc-linux' '--host=powerpc-linux' '--with-persistent-directory=/tmp/snmp' '--with-logfile=/tmp/snmp/snmpd.log' '--disable-static' '--enable-shared' '--prefix=/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64' 'host_alias=powerpc-linux' 'target_alias=powerpc-linux'"
+#define NETSNMP_CONFIGURE_OPTIONS " '--with-out-mib-modules=mibII' '--disable-ucd-snmp-compatibility' '--disable-agent' '--disable-applications' '--disable-manuals' '--disable-scripts' '--disable-mibs' '--disable-mib-loading' '--disable-ipv6' '--with-default-snmp-version=2' '--with-sys-contact=' '--with-sys-location=' '--disable-embedded-perl' '--without-perl-modules' '--target=powerpc-linux' '--host=powerpc-linux' '--with-persistent-directory=/tmp/snmp' '--with-logfile=/tmp/snmp/snmpd.log' '--disable-static' '--enable-shared' '--prefix=/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64' 'host_alias=powerpc-linux' 'target_alias=powerpc-linux'"
 
 /* default location to look for mibs to load using the above tokens and/or
    those in the MIBS envrionment variable */
-#define NETSNMP_DEFAULT_MIBDIRS "$HOME/.snmp/mibs:/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp/mibs"
+#define NETSNMP_DEFAULT_MIBDIRS "$HOME/.snmp/mibs:/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp/mibs"
 
 /* default mib files to load, specified by path. */
 /* #undef NETSNMP_DEFAULT_MIBFILES */
@@ -1772,10 +1772,10 @@
 /* #undef NETSNMP_DEFAULT_CLIENT_RECV_BUF */
 
 /* net-snmp's major path names */
-#define SNMPLIBPATH "/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/lib/snmp"
-#define SNMPSHAREPATH "/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp"
-#define SNMPCONFPATH "/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/etc/snmp"
-#define SNMPDLMODPATH "/mnt/d/danos/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/lib/snmp/dlmod"
+#define SNMPLIBPATH "/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/lib/snmp"
+#define SNMPSHAREPATH "/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/share/snmp"
+#define SNMPCONFPATH "/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/etc/snmp"
+#define SNMPDLMODPATH "/home/jeff/groove/bsotn/3rdParty/net-snmp-5.7.3/net-snmp-5.7.3/../build_x86_64/lib/snmp/dlmod"
 
 /* NETSNMP_LOGFILE:  If defined it closes stdout/err/in and opens this in 
    out/err's place.  (stdin is closed so that sh scripts won't wait for it) */
